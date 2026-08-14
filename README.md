@@ -1,2 +1,28 @@
-# Ps2Cocos-Releases
-Ps2Cocos installer packages and release notes
+# Ps2Cocos Releases
+
+Ps2Cocos 是 Cocos Creator `3.8.5+` 的编辑器扩展，用于把 Photoshop 导出的 PS2Unity Package 转换为可编辑 UI Prefab。
+
+## 先安装 Photoshop 导出端
+
+Ps2Cocos ZIP 不包含 Photoshop 插件。请先从 [PS2Unity Photoshop Releases](https://github.com/Homer79980/PSD2Unity-Releases/releases/latest) 下载最新的 `PS2Unity-Photoshop-<版本>.ccx`，安装并重启 Photoshop。
+
+在 Photoshop 中打开 `插件 -> PS2Unity`，设置模块名与九宫边界并导出 Package。
+
+## 安装
+
+1. 从 [最新 Release](https://github.com/Homer79980/Ps2Cocos-Releases/releases/latest) 下载 `Ps2Cocos-<版本>.zip`。
+2. 在 Cocos Creator 中打开 `Extension -> Extension Manager`。
+3. 选择 `Project` 或 `Global`，点击 `+` 并选择 ZIP。
+4. 启用 `Ps2Cocos`；若菜单没有出现，重启 Creator。
+
+## 导入
+
+1. 运行 `Extension -> Ps2Cocos -> 导入 Photoshop Package...`。
+2. 选择包含 `layout.json` 的 Package 根目录，不要选择 `sprites` 子目录。
+3. 在 `assets/ps2cocos/{module}/prefabs` 中打开生成的 Prefab。
+
+## 拉伸九宫
+
+选择九宫节点，确认 `Sprite.Type = SLICED`、`Size Mode = CUSTOM`，然后拖动矩形边框或修改 `UITransform.Width/Height`。不要修改 `Scale X/Y`，否则固定边角也会被整体缩放。
+
+生成的 Prefab 可能在重导时被覆盖，业务脚本应挂在引用生成 Prefab 的外壳 Prefab 上。

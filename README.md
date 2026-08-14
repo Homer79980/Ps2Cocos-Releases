@@ -1,12 +1,12 @@
 # Ps2Cocos Releases
 
-Ps2Cocos 是 Cocos Creator `3.8.5+` 的编辑器扩展，用于把 Photoshop 导出的 PS2Unity Package 转换为可编辑 UI Prefab。
+Ps2Cocos 是 Cocos Creator `3.8.5+` 的编辑器扩展，用于把 Photoshop 导出的 PS2UI Package 转换为可编辑 UI Prefab。
 
 ## 先安装 Photoshop 导出端
 
-Ps2Cocos ZIP 不包含 Photoshop 插件。请先从 [PS2Unity Photoshop Releases](https://github.com/Homer79980/PSD2Unity-Releases/releases/latest) 下载最新的 `PS2Unity-Photoshop-<版本>.ccx`，安装并重启 Photoshop。
+Ps2Cocos ZIP 不包含 Photoshop 插件。请先从 [PS2UI Photoshop Releases](https://github.com/Homer79980/PSD2Unity-Releases/releases/latest) 下载最新的 `PS2UI-Photoshop-<版本>.ccx`，安装并重启 Photoshop。
 
-在 Photoshop 中打开 `插件 -> PS2Unity`，设置模块名与九宫边界并导出 Package。
+在 Photoshop 中打开 `插件 -> PS2UI`，设置模块名与九宫边界并导出 Package。
 
 ## 安装
 

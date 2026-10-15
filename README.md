@@ -1,6 +1,8 @@
 # Ps2Cocos Releases
 
-Ps2Cocos `0.1.1` 是 Cocos Creator `3.8.5+` 编辑器扩展，用于把 PS2UI Photoshop Package 转换为可编辑 UI Prefab。Creator 2.4 使用不同的扩展与序列化系统，本版本不支持。
+Ps2Cocos `0.1.2` 是 Cocos Creator `3.8.5+` 编辑器扩展，用于把 PS2UI Photoshop Package 转换为可编辑 UI Prefab。Creator 2.4 使用不同的扩展与序列化系统，本版本不支持。
+
+0.1.2 修复同名画板输出覆盖和图片内容变化但时间、大小不变时的过期缓存。现有字体映射与导入入口保持原流程。
 
 ## 前置：安装 PS2UI
 
@@ -8,7 +10,7 @@ Ps2Cocos `0.1.1` 是 Cocos Creator `3.8.5+` 编辑器扩展，用于把 PS2UI Ph
 
 ## 安装
 
-1. 从 [最新 Release](https://github.com/Homer79980/Ps2Cocos-Releases/releases/latest) 下载 `Ps2Cocos-0.1.1.zip`。
+1. 从 [最新 Release](https://github.com/Homer79980/Ps2Cocos-Releases/releases/latest) 下载 `Ps2Cocos-0.1.2.zip`。
 2. 在 Creator 打开 `Extension -> Extension Manager`。
 3. 选择 `Project` 或 `Global`，点击 `+` 并选择 ZIP。
 4. 启用 `Ps2Cocos`；菜单未出现时重启 Creator。
@@ -63,7 +65,7 @@ PS2UI Package 已包含当前设计使用的字体身份、字号、行高、字
 ## 校验下载
 
 ```powershell
-Get-FileHash .\Ps2Cocos-0.1.1.zip -Algorithm SHA256
+Get-FileHash .\Ps2Cocos-0.1.2.zip -Algorithm SHA256
 ```
 
-输出应与 `Ps2Cocos-0.1.1-SHA256.txt` 一致。
+输出应与 `Ps2Cocos-0.1.2-SHA256.txt` 一致。
